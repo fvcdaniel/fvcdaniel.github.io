@@ -90,6 +90,8 @@ layout: default
       <h6><a href="mailto:{{ site.author_email }}"><i class="fas fa-envelope" class="social-link"></i> {{ site.author_email }}</a></h6>
       {% endif %} {% if site.author_website_url %}
       <h6><a href="{{ site.author_website_url }}"><i class="fas fa-link" class="social-link"></i> {{ site.author_website_url }}</a></h6>
+      {% endif %} {% if site.author_resume_pdf %}
+      <h6><a href="{{site.url}}{{site.baseurl}}/assets/pdf/{{ site.author_resume_pdf }}" download><i class="fas fa-file-pdf" class="social-link"></i> Baixar currículo (PDF)</a></h6>
       {% endif %}
     </div>
 

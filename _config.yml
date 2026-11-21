@@ -14,10 +14,6 @@ urls:
       url: /about
     - text: Blog
       url: /blog
-    - text: Gallery
-      url: /gallery
-    - text: Shop
-      url : /shop
     - text: Contact
       url : /contact
 
@@ -30,6 +26,7 @@ author_bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
 author_email: "mail@sujaykundu.com"
 author_location: India
 author_website_url: "https://sujaykundu.com"
+author_resume_pdf: curriculo.pdf # arquivo em /assets/pdf; remova para esconder o botão
 typewrite-text: devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
@@ -198,6 +195,10 @@ exclude:
   - node_modules/
   - vendor/bundle/
   - vendor/cache/
+  - shop.md
+  - sponsors.md
+  - gallery/
+  - _products/
   - vendor/gems/
   - vendor/ruby/
   - assets/bower_components/isotope-layout/README.md
