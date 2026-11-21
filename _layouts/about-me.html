@@ -91,7 +91,7 @@ layout: default
       {% endif %} {% if site.author_website_url %}
       <h6><a href="{{ site.author_website_url }}"><i class="fas fa-link" class="social-link"></i> {{ site.author_website_url }}</a></h6>
       {% endif %} {% if site.author_resume_pdf %}
-      <h6><a href="{{site.url}}{{site.baseurl}}/assets/pdf/{{ site.author_resume_pdf }}" download><i class="fas fa-file-pdf" class="social-link"></i> Baixar currículo (PDF)</a></h6>
+      <h6><a href="{{site.url}}{{site.baseurl}}/assets/pdf/{{ site.author_resume_pdf }}" download><i class="fas fa-file-pdf" class="social-link"></i> Download resume (PDF)</a></h6>
       {% endif %}
     </div>
 
@@ -150,16 +150,19 @@ layout: default
       %}
       <div class="row">
         <div class="col-md-2">
+          {% if exp.company_logo %}
           <img
             src="{{site.url}}{{site.baseurl}}/assets/img/{{ exp.company_logo }}"
             class="company-logo"
           />
+          {% endif %}
         </div>
         <div class="col-md-6">
           <h4 class="experience-title">{{ exp.designation }}</h4>
           <h6 class="experience-info">{{ exp.company_name}}</h6>
+          {% if exp.period %}<h6 class="experience-info">{{ exp.period }}</h6>{% endif %}
           <p class="experience-desc">{{ exp.description }}</p>
-          <p><a href="{{exp.company_url}}">{{ exp.company_url}}</a></p>
+          {% if exp.company_url %}<p><a href="{{exp.company_url}}">{{ exp.company_url}}</a></p>{% endif %}
         </div>
       </div>
       {% endif %} {% endfor %}
@@ -172,14 +175,17 @@ layout: default
       == true %}
       <div class="row">
         <div class="col-md-2">
+          {% if detail.college_logo %}
           <img
             src="{{site.url}}{{site.baseurl}}/assets/img/{{ detail.college_logo}}"
             class="company-logo"
           />
+          {% endif %}
         </div>
         <div class="col-md-6">
-          <h4 class="experience-title">{{detail.college_degree }}</h4>
-          <h6 class="experience-info">{{detail.college_name}}</h6>
+          <h4 class="experience-title">{{ detail.college_degree | default: detail.college_name }}</h4>
+          {% if detail.college_degree %}<h6 class="experience-info">{{detail.college_name}}</h6>{% endif %}
+          {% if detail.period %}<h6 class="experience-info">{{ detail.period }}</h6>{% endif %}
           <p class="experience-desc">{{detail.description}}</p>
           <p><a href="{{detail.college_url}}">{{ detail.college_url}}</a></p>
         </div>
