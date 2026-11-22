@@ -1,0 +1,132 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+# Fonte única do currículo. Para gerar o PDF: ./cv/build.sh
+# O PDF vai para assets/pdf/Resume-DanielCardoso-DevOps.pdf (link do botão "Resume" do site).
+cv:
+  name: Daniel Cardoso
+  headline: DevOps Engineer · Cloud · Kubernetes · Infrastructure as Code
+  location: João Pessoa, Brazil
+  email: fvcdaniel@gmail.com
+  phone: "+55 83 99654 7038"
+  website: https://fvcdaniel.github.io
+  social_networks:
+    - network: LinkedIn
+      username: daniel-cardoso-51b52b29
+    - network: GitHub
+      username: fvcdaniel
+  sections:
+    summary:
+      - DevOps Engineer based in João Pessoa, Brazil, working in technology since 2009. Experience with cloud
+        (AWS, GCP), Kubernetes, Helm, Rancher, ArgoCD, Terraform/Terragrunt, CI/CD with GitHub Actions and
+        GitLab, observability (Datadog, Grafana, Graylog, ELK) and on-premises datacenter infrastructure
+        (vCenter, FortiGate, Linux).
+
+    skills:
+      - label: Cloud & Orchestration
+        details: AWS, GCP, DigitalOcean, Kubernetes, Helm, Rancher, ArgoCD, Docker
+      - label: IaC & CI/CD
+        details: Terraform, Terragrunt, Ansible, GitHub Actions, GitLab CI, SonarQube
+      - label: Observability & Security
+        details: Datadog, Grafana, Graylog, ELK, Vault, Keycloak (SSO, OIDC, SAML)
+      - label: Infrastructure
+        details: Linux, vCenter, FortiGate, datacenter
+      - label: Programming
+        details: Python, Shell, Java, JavaScript, Ruby
+      - label: Languages
+        details: Portuguese, English
+
+    experience:
+      - company: WEX
+        position: DevOps Engineer
+        start_date: 2023-10
+        end_date: present
+        location: Remote
+        highlights:
+          - "**Stack:** AWS, Docker, GitHub, Kubernetes, Helm, Linux, ArgoCD, Terraform, Terragrunt, GitHub Actions,
+            Datadog, Vault, Artifactory, Grafana, Lambda, S3."
+      - company: IFPB – Federal Institute
+        position: System Analyst
+        start_date: 2023-07
+        end_date: 2023-09
+        location: João Pessoa, Brazil
+        highlights:
+          - "**Stack:** AWS, Docker, GitLab, Graylog, vCenter, datacenter, Kubernetes, Rancher, FortiGate, Linux,
+            Python, Django, ArgoCD, Terraform, Terragrunt, GitHub Actions."
+      - company: Oddie
+        position: DevOps Engineer
+        start_date: 2021-12
+        end_date: 2023-07
+        location: Remote
+        highlights:
+          - "**Stack:** AWS (EC2, SQS, S3, RDS, API Gateway, ELB, Lambda, ELK), GCP, Terraform, GitHub,
+            GitHub Actions, Docker, Kubernetes, Rancher, DigitalOcean, Vapor, Vercel, SonarQube, CI/CD,
+            Keycloak, SSO, OIDC, SAML, Kustomize, Graylog, Redis, QA."
+      - company: IFPB – Federal Institute
+        position: Network and Infrastructure Coordinator
+        start_date: 2019-12
+        end_date: 2022-05
+        location: João Pessoa, Brazil
+        highlights:
+          - "**Stack:** Terraform, Ansible, Docker, GitLab, Graylog, vCenter, datacenter, Kubernetes, Rancher,
+            FortiGate, Linux, Python."
+      - company: IFPB – Federal Institute
+        position: System Analyst
+        start_date: 2016-09
+        end_date: 2021-12
+        location: João Pessoa, Brazil
+        highlights:
+          - "**Stack:** AWS, Docker, GitLab, Graylog, vCenter, datacenter, Kubernetes, Rancher, FortiGate, Linux,
+            Python, Django, ArgoCD, Terraform, Terragrunt, GitHub Actions."
+      - company: IFPB – Federal Institute
+        position: Substitute Teacher
+        start_date: 2015-04
+        end_date: 2017-04
+        location: João Pessoa, Brazil
+      - company: CODATA
+        position: Information Security Analyst
+        start_date: 2013-09
+        end_date: 2016-08
+        location: João Pessoa, Brazil
+        highlights:
+          - "**Stack:** Docker, Kubernetes, JBoss, Tomcat, iptables, Linux, Python, Rancher, vCenter, Git,
+            Ruby on Rails, PostgreSQL."
+      - company: Lojas Maia / Magazine Luiza
+        position: System Analyst
+        start_date: 2010-09
+        end_date: 2013-05
+        location: João Pessoa, Brazil
+        highlights:
+          - "**Stack:** Java, Oracle, PL/SQL, Git."
+      - company: UFPB
+        position: Trainee
+        start_date: 2009-09
+        end_date: 2010-09
+        location: João Pessoa, Brazil
+        highlights:
+          - "**Stack:** Ruby, Rails, Java."
+
+    education:
+      - institution: IFPB – Federal Institute
+        area: Technologist in Internet Systems (Tecnologia em Sistemas para Internet)
+        start_date: 2007
+        end_date: 2010
+        location: João Pessoa, Brazil
+
+
+design:
+  theme: classic
+  header:
+    connections:
+      phone_number_format: international
+
+locale:
+  language: english
+
+settings:
+  current_date: today
+  bold_keywords: [Kubernetes, Helm, ArgoCD, Terraform, Terragrunt, GitHub Actions, AWS]
+  pdf_title: Daniel Cardoso - Resume
+  render_command:
+    output_folder: rendercv_output
+    pdf_path: ../assets/pdf/Resume-DanielCardoso-DevOps.pdf
+    dont_generate_html: true
+    dont_generate_png: true

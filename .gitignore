@@ -15,3 +15,6 @@ vendor/
 
 # macOS
 .DS_Store
+
+# RenderCV (arquivos intermediários; o PDF final vai para assets/pdf/)
+cv/rendercv_output/

@@ -24,7 +24,7 @@ author_logo: daniel.jpg
 author: Daniel Cardoso
 author_bio: >-
   DevOps Engineer based in João Pessoa, Brazil, working in technology since 2009.
-  Experience with cloud (AWS, GCP), Kubernetes, Rancher, ArgoCD, Terraform/Terragrunt,
+  Experience with cloud (AWS, GCP), Kubernetes, Helm, Rancher, ArgoCD, Terraform/Terragrunt,
   CI/CD with GitHub Actions and GitLab, observability (Datadog, Grafana, Graylog, ELK)
   and on-premises datacenter infrastructure (vCenter, FortiGate, Linux).
 author_email: "fvcdaniel@gmail.com"
@@ -39,7 +39,7 @@ author_work_experiences:
               company_url: https://wexinc.com
               designation: DevOps Engineer
               period: Oct 2023 - Present
-              description: AWS, Docker, GitHub, Kubernetes, Linux, ArgoCD, Terraform, Terragrunt, GitHub Actions, Datadog, Vault, Artifactory, Grafana, Lambda, S3.
+              description: AWS, Docker, GitHub, Kubernetes, Helm, Linux, ArgoCD, Terraform, Terragrunt, GitHub Actions, Datadog, Vault, Artifactory, Grafana, Lambda, S3.
               visibility: true
             - company_name: IFPB - Federal Institute, João Pessoa/BR
               company_url: https://www.ifpb.edu.br
@@ -201,6 +201,7 @@ exclude:
   - node_modules/
   - vendor/bundle/
   - vendor/cache/
+  - cv/
   - shop.md
   - sponsors.md
   - gallery/

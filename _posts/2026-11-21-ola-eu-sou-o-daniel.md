@@ -26,12 +26,12 @@ Em dezembro de 2021 comecei como DevOps Engineer na Oddie, trabalhando de forma 
 
 ## Hoje
 
-Desde outubro de 2023 sou DevOps Engineer na WEX. No dia a dia trabalho com AWS, Docker, Kubernetes, ArgoCD, Terraform e Terragrunt, GitHub Actions, Vault, Artifactory, Lambda e S3, além de observabilidade com Datadog e Grafana.
+Desde outubro de 2023 sou DevOps Engineer na WEX. No dia a dia trabalho com AWS, Docker, Kubernetes, Helm, ArgoCD, Terraform e Terragrunt, GitHub Actions, Vault, Artifactory, Lambda e S3, além de observabilidade com Datadog e Grafana.
 
 ## Onde costumo atuar
 
 - Nuvem: AWS e GCP
-- Contêineres e orquestração: Docker, Kubernetes, Rancher e ArgoCD
+- Contêineres e orquestração: Docker, Kubernetes, Helm, Rancher e ArgoCD
 - Infrastructure as Code: Terraform e Terragrunt
 - CI/CD: GitHub Actions e GitLab
 - Observabilidade: Datadog, Grafana, Graylog e ELK
